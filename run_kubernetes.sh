@@ -12,7 +12,7 @@ DOCKER_PORT=80
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run $TAG --image=$DOCKERPATH
+kubectl run $TAG --image=$DOCKERPATH --port=80
 sleep 90s  # wait until kubernetes pods
 
 # Step 3:
